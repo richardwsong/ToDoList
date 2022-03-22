@@ -30,7 +30,6 @@ function List() {
       <div className="inputs">
         <input
           type="text"
-          name="textbox"
           value={title}
           onChange={(event) => setTitle(event.target.value)}
         />
