@@ -39,6 +39,25 @@
 
 .item {
   background-color: aquamarine;
-  display: flex;
+  border: solid 1px rgb(71, 80, 80);
+  border-radius: 20px;
+  padding: 10px;
   margin: 10px 0;
+  display: grid;
+  grid-template-columns: 60% 30% 10%;
+  grid-template-areas: "title date checkbox";
+  align-items: center;
+}
+
+.title {
+  /* grid-area: title; */
+
+}
+
+.date {
+
+}
+
+.checkbox {
+  margin-right: 200px;
 }

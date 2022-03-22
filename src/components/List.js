@@ -16,8 +16,9 @@ function List() {
   const [todo, setTodo] = useState([]);
   const [date, setDate] = useState(new Date());
   function onSubmit() {
-    setTodo([...todo, { title: title, date: date.toDateString() }]);
+    setTodo([...todo, { title: title, date: date }]);
     setTitle("");
+    setDate(new Date());
   }
   const removeItem = (data) => {
     console.log(data);
